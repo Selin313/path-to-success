@@ -1,0 +1,341 @@
+/* CSS BY Selin Ayyildiz */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ROOT VARIABLES */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+    --font-main: 'Inter';
+    --font-heading: 'Kavoon';
+} 
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    background-color: var(--lavender);
+    font-family: var(--font-main);
+    color: var(--dark-gray);
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    background-color: var(--purple);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: 2em;
+}
+
+h3 {
+    font-family: var(--font-main);
+    font-size: 1.5em; 
+}
+
+h4 {
+    font-family: var(--font-main);
+    font-size: 1.15em;                      
+}
+
+p {
+    font-family: var(--font-main);
+    font-weight: 500;
+
+}
+
+
+/* HEADER SECTION */
+
+.header {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+}
+
+
+.header p {
+    font-size: 0.9em;
+}
+
+
+
+/* MENU SECTION*/
+
+.menu {
+    background-color: var(--yellow);
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+}
+
+.menu h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: var(--dark-gray);
+}
+
+/* REMOVE UNDERLINE*/
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    background-color: var(--white);
+    margin: 0.5rem 2rem;
+}
+
+/* NAVIGATION LINKS */
+.menu a {
+    display: block;
+    padding: 0.6rem 0;
+    color: var(--purple);
+    font-weight: 600; /* MAKE TEXT BOLDER TO MATCH */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* CREATE A HOVER EFFECT ON LINKS (INVERSED COLORS) */
+.menu a:hover {
+    background-color: var(--lavender);
+    color: var(--white);
+}
+
+
+/* OUR SERVICES SECTION */
+
+.OurServices {
+    text-align: left;
+    padding-left: 0.5rem ;
+    background-color: var(--purple);
+}
+
+.OurServices h2 {
+    color: var(--white);
+    padding-left: 0.5rem;
+}
+
+.OurServices h3 {
+    color: var(--yellow);
+    padding-left: 0.5rem;
+    
+}
+
+.OurServices h4 {
+    padding-left: 0.5rem;
+}
+
+.OurServices p {
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+/* INNER SERVICES */
+
+.OurServices section {
+    background-color: var(--white);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    display:block;
+}
+
+.OurServices img {
+    width: 100px;
+    height: auto;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    
+}
+
+.OurServices h4 {
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.OurServices p {
+    font-size: 0.8em;
+    padding-top: 0.5em;
+}
+
+
+
+/* WHY SECTION */
+
+.Why {
+    background-color: var(--pink);
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.Why h2 {
+    color: var(--white);
+    text-align: left;
+    padding: 0 0.5rem 1rem 0.5rem;              
+}
+
+.Why ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+    gap: 1rem;
+}
+
+.Why li {
+    font-weight: 700;
+    border-radius: 0.5em;
+    padding: 1.5rem;
+    font-size: 1em;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+/* IND BOX COLORS */
+.Why li:nth-child(1) {
+    background-color: var(--teal);
+}
+.Why li:nth-child(2) {
+    background-color: var(--lavender);
+}
+.Why li:nth-child(3) {
+    background-color: var(--yellow);
+}
+.Why li:nth-child(4) {
+    background-color: var(--white);
+}
+
+
+
+/* PRICING */
+
+.Pricing {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: left;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.Pricing h2 {
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+.Pricing h3 {
+    color: var(--yellow);
+    padding-left: 0.5rem;
+    
+}
+
+/* PRICING TABLES STYLE! */
+.Pricing table {
+    width: 60%;  
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+/* TABLE HEADING */
+.Pricing th {
+    background-color: var(--yellow);
+    color: var(--dark-gray);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    border: 2px solid var(--yellow);
+}
+
+/* TABLE ROW */
+.Pricing td {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 1rem;
+    border: 2px solid var(--yellow);
+    font-weight: 600;
+}
+
+
+/* SCHEDULING */
+
+.Schedule {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 0.5rem ;
+}
+
+.Schedule h2 {
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.Schedule p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+
+/* SCHEDULE BUTTON */
+.Schedule a {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem ;
+    font-weight: 700;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 85%;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+.Schedule a:hover {
+    background-color: var(--white);
+    color: var(--pink);
+}
+
+
+/* FOOTER */
+.Footer {
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+    font-size: 0.75em;
+} /* cant figure out how to make text wider */
+
+
+.Footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.Footer a:hover {
+    color: var(--yellow);
+}
